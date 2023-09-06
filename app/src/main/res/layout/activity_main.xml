@@ -7,22 +7,23 @@
     android:background="@color/outer_space"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/num2"
-        android:layout_width="118dp"
-        android:layout_height="125dp"
+    <EditText
+        android:id="@+id/num2et"
+        android:layout_width="153dp"
+        android:layout_height="117dp"
         android:background="@color/black"
         android:backgroundTint="@color/black"
         android:gravity="center"
         android:hint="@string/num_box"
+        android:inputType="numberDecimal"
         android:textColor="@color/seashell"
-        android:textColorHint="@color/seashell"
+        android:textColorHint="@color/outer_space"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintHorizontal_bias="0.844"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.195" />
 
     <Button
         android:id="@+id/subtraction"
@@ -54,6 +55,7 @@
         android:paddingEnd="@dimen/right_padding"
         android:text="@string/add_operation"
         android:textSize="@dimen/operation_font"
+        android:onClick="add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.19"
@@ -97,20 +99,37 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.535" />
 
-    <TextView
-        android:id="@+id/num1"
-        android:layout_width="118dp"
-        android:layout_height="125dp"
+    <EditText
+        android:id="@+id/num1et"
+        android:layout_width="153dp"
+        android:layout_height="117dp"
         android:background="@color/black"
         android:backgroundTint="@color/black"
         android:gravity="center"
         android:hint="@string/num_box"
-        android:textColorHint="@color/seashell"
+        android:inputType="number"
         android:textColor="@color/seashell"
+        android:textColorHint="@color/outer_space"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.195" />
+
+    <TextView
+        android:id="@+id/answer_box"
+        android:layout_width="213dp"
+        android:layout_height="120dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/seashell"
+        android:textSize="@dimen/integer_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
 </androidx.constraintlayout.widget.ConstraintLayout>
