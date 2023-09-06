@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalculatorApp</string>
+    <string name="add_operation">+</string>
+    <string name="sub_operation">-</string>
+    <string name="div_operation">/</string>
+    <string name="mult_operation">x</string>
+    <string name="num_box">Number</string>
+
+</resources>

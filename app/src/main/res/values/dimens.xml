@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="operation_font"> 32sp </dimen>
+    <dimen name="left_margin"> 35dp </dimen>
+    <dimen name="padding"> 15dp </dimen>
+    <dimen name="integer_font"> 50sp </dimen>
+    <dimen name="right_margin"> 35dp </dimen>
+    <dimen name="left_padding"> 35dp </dimen>
+    <dimen name="right_padding"> 35dp </dimen>
+
+</resources>
