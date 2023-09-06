@@ -8,7 +8,7 @@
     tools:context=".MainActivity" >
 
     <TextView
-        android:id="@+id/num3"
+        android:id="@+id/num2"
         android:layout_width="118dp"
         android:layout_height="125dp"
         android:background="@color/black"
