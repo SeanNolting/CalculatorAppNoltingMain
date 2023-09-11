@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/num2et"
-        android:layout_width="153dp"
-        android:layout_height="117dp"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
         android:background="@color/black"
         android:backgroundTint="@color/black"
         android:gravity="center"
@@ -20,10 +20,46 @@
         android:textColorHint="@color/outer_space"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195" />
+        app:layout_constraintVertical_bias="0.46" />
+
+    <Button
+        android:id="@+id/division"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/right_margin"
+        android:backgroundTint="@color/flame"
+        android:paddingStart="@dimen/left_padding"
+        android:paddingEnd="@dimen/right_padding"
+        android:text="@string/div_operation"
+        android:textSize="@dimen/operation_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.399"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
+
+    <Button
+        android:id="@+id/multiplication"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/right_margin"
+        android:backgroundTint="@color/flame"
+        android:paddingStart="@dimen/left_padding"
+        android:paddingEnd="@dimen/right_padding"
+        android:text="@string/mult_operation"
+        android:textSize="@dimen/operation_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.652" />
 
     <Button
         android:id="@+id/subtraction"
@@ -39,10 +75,10 @@
         android:textSize="@dimen/operation_font"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintHorizontal_bias="0.399"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
+        app:layout_constraintVertical_bias="0.434" />
 
     <Button
         android:id="@+id/addition"
@@ -57,51 +93,15 @@
         android:textSize="@dimen/operation_font"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintHorizontal_bias="0.399"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535" />
-
-    <Button
-        android:id="@+id/multiplication"
-        style="@style/Widget.Material3.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/right_margin"
-        android:backgroundTint="@color/flame"
-        android:paddingStart="@dimen/left_padding"
-        android:paddingEnd="@dimen/right_padding"
-        android:text="@string/mult_operation"
-        android:textSize="@dimen/operation_font"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.635"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
-
-    <Button
-        android:id="@+id/division"
-        style="@style/Widget.Material3.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/right_margin"
-        android:backgroundTint="@color/flame"
-        android:paddingStart="@dimen/left_padding"
-        android:paddingEnd="@dimen/right_padding"
-        android:text="@string/div_operation"
-        android:textSize="@dimen/operation_font"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.635"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.535" />
+        app:layout_constraintVertical_bias="0.32" />
 
     <EditText
         android:id="@+id/num1et"
-        android:layout_width="153dp"
-        android:layout_height="117dp"
+        android:layout_width="113dp"
+        android:layout_height="123dp"
         android:background="@color/black"
         android:backgroundTint="@color/black"
         android:gravity="center"
@@ -111,24 +111,51 @@
         android:textColorHint="@color/outer_space"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195" />
+        app:layout_constraintVertical_bias="0.46" />
 
     <TextView
         android:id="@+id/answer_box"
-        android:layout_width="213dp"
-        android:layout_height="120dp"
+        android:layout_width="338dp"
+        android:layout_height="66dp"
         android:background="@color/black"
         android:gravity="center"
-        android:text="Answer"
+        android:text="@string/answer_box"
         android:textColor="@color/seashell"
         android:textSize="@dimen/integer_font"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945" />
+        app:layout_constraintVertical_bias="0.842" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="331dp"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:text="@string/header_box"
+        android:textColor="@color/seashell"
+        android:textSize="@dimen/integer_font"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="119dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/clear_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
