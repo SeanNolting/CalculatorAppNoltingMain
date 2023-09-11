@@ -8,5 +8,6 @@
     <string name="answer_box">Answer</string>
     <string name="header_box">Calculator</string>
     <string name="clear_button">Clear</string>
+    <string name="number_pad_button">Number pad</string>
 
 </resources>

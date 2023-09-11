@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="operation_font"> 32sp </dimen>
-    <dimen name="left_margin"> 35dp </dimen>
     <dimen name="padding"> 15dp </dimen>
     <dimen name="integer_font"> 50sp </dimen>
-    <dimen name="right_margin"> 35dp </dimen>
-    <dimen name="left_padding"> 35dp </dimen>
-    <dimen name="right_padding"> 35dp </dimen>
+    <dimen name="left_margin_center"> 38dp </dimen>
+    <dimen name="right_margin_center"> 38dp </dimen>
+    <dimen name="left_margin_numEditText"> 10dp </dimen>
+    <dimen name="right_margin_numEditText"> 10dp </dimen>
+    <dimen name="left_margin_answer"> 10dp </dimen>
+    <dimen name="right_margin_answer"> 10dp </dimen>
+    <dimen name="right_padding_operation"> 35dp </dimen>
+    <dimen name="button_font"> 28sp</dimen>
 
 </resources>
