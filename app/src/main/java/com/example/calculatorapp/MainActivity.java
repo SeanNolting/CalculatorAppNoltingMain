@@ -2,8 +2,10 @@ package com.example.calculatorapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.InflateException;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText int1;
     private EditText int2 ;
     private Button add, sub, div, mult;
-    private Button clear;
+    private Button clear, change;
     private TextView answer;
     String blankBox = "Answer";
 
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mult = findViewById(R.id.multiplication);
         answer = findViewById(R.id.answer_box);
         clear = findViewById(R.id.clear);
+        change = findViewById(R.id.change_screen);
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,8 +133,15 @@ public class MainActivity extends AppCompatActivity {
                 answer.setText("Answer");
             }
         });
-    }
 
+
+
+    }
+        public void switchScreens(View v)
+        {
+            Intent intent = new Intent(this, NumberPad.class);
+            startActivity(intent);
+        }
 }
 
 
