@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText int1;
     private EditText int2 ;
     private Button add, sub, div, mult;
-    private Button clear, change;
+    private Button clear;
     private TextView answer;
     String blankBox = "Answer";
 
@@ -35,7 +35,14 @@ public class MainActivity extends AppCompatActivity {
         mult = findViewById(R.id.multiplication);
         answer = findViewById(R.id.answer_box);
         clear = findViewById(R.id.clear);
-        change = findViewById(R.id.change_screen);
+
+        //Used to help with checking the number boxes
+        //https://www.tutorialspoint.com/java/lang/string_isempty.htm#:~:text=The%20Java%20String%20isEmpty(),does%20not%20accept%20any%20parameter.
+
+        //Used to help explain the set onClickListeners and the onClick method
+        //https://www.youtube.com/watch?v=mEvFm3KMtzQ
+
+        //
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -119,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     double num1 = Integer.parseInt(int1.getText().toString());
                     double num2 = Integer.parseInt(int2.getText().toString());
-                    double quot = num1 / num2;
+                    double quot = (num1 / num2);
                     String quotString = String.valueOf(quot);
                     answer.setText(quotString);
                 }
@@ -137,11 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-        public void switchScreens(View v)
-        {
-            Intent intent = new Intent(this, NumberPad.class);
-            startActivity(intent);
-        }
+
 }
 
 
